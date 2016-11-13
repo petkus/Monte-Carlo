@@ -24,13 +24,14 @@ def gaussian(n):
     return np.exp(-(n**2) / (2 * sdev ** 2)) / (m.sqrt(2 * m.pi * sdev ** 2))
 
 def angle():
-    x = r.random()
-    y = 10 * r.random() - 5
-    if x < gaussian(y):
-        return y
+    y = r.random()
+    x = 10 * r.random() - 5
+    if y < gaussian(y):
+        return x
     else:
         return False
 
+ar = []
 for i in range(1000):
     x = False
     while x == False:
