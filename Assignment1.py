@@ -16,5 +16,4 @@ plt.title("Gluon Energy")
 plt.xlabel("Ratio")
 plt.ylabel("Frequency")
 
-fig = plt.gcf()
-
+plt.show()
